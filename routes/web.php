@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('put', function() {
+    Storage::cloud()->put('hellosfr.txt', "Hello SFR's People");
+    return 'File was saved to Google Drive';
+});
+
+
+

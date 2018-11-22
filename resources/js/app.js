@@ -17,7 +17,7 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
 
@@ -31,6 +31,43 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+import App from './components/App.vue'
+import Dashboard from './components/Dashboard.vue'
+import UploadFile from './components/modules/uploadfile/Index.vue'
+import Tutorial from './components/modules/uploadfile/Tutorial.vue'
+
+const router = new VueRouter({
+    routes: [ 
+        {
+            path:'/',
+            name:'Dashboard',
+            component:Dashboard,
+            children : [	
+				{
+		            path:'/uploadfile',
+		            name: 'UploadFile',
+		            component: UploadFile,
+		        }, 
+		        {
+		            path:'/tutorial',
+		            name: 'Tutorial',
+		            component: Tutorial,
+		        }, 
+		
+			]
+        },
+    ],
+});
+
+
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+   	template: '<app></app>',
+    components: { App },
+    router
 });
