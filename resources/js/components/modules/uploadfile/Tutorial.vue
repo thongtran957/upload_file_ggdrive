@@ -174,7 +174,19 @@ Route::get('put', function() {
 			<div class="heading" style="font-size:22px">
 				<p>3.Tham khảo</p>
 				<div style="font-size:18px; margin-left: 25px">
-					<p>Bảng định tuyến có sẵn :<a href="https://github.com/ivanvermeyen/laravel-google-drive-demo">Available routes</a></p>
+					<ul>
+						<li>
+							<p>Bảng định tuyến có sẵn :<a href="https://github.com/ivanvermeyen/laravel-google-drive-demo">Available routes</a></p>
+						</li>
+						<li>
+							<p>Link demo :<a href="http://uploadfiletoggdrive.herokuapp.com">demo.com</a></p>
+						</li>
+						<li>
+							<p>Link github soure :<a href="https://github.com/thongtran957/upload_file_ggdrive/tree/upload_file">github.com</a></p>
+		
+						</li>
+					</ul>
+					
 				</div>
 				
 			</div>

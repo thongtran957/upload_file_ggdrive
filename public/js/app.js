@@ -74567,7 +74567,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74578,6 +74578,18 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -75083,18 +75095,53 @@ var render = function() {
               "div",
               { staticStyle: { "font-size": "18px", "margin-left": "25px" } },
               [
-                _c("p", [
-                  _vm._v("Bảng định tuyến có sẵn :"),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "https://github.com/ivanvermeyen/laravel-google-drive-demo"
-                      }
-                    },
-                    [_vm._v("Available routes")]
-                  )
+                _c("ul", [
+                  _c("li", [
+                    _c("p", [
+                      _vm._v("Bảng định tuyến có sẵn :"),
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href:
+                              "https://github.com/ivanvermeyen/laravel-google-drive-demo"
+                          }
+                        },
+                        [_vm._v("Available routes")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("p", [
+                      _vm._v("Link demo :"),
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "http://uploadfiletoggdrive.herokuapp.com"
+                          }
+                        },
+                        [_vm._v("demo.com")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("p", [
+                      _vm._v("Link github soure :"),
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href:
+                              "https://github.com/thongtran957/upload_file_ggdrive/tree/upload_file"
+                          }
+                        },
+                        [_vm._v("github.com")]
+                      )
+                    ])
+                  ])
                 ])
               ]
             )
