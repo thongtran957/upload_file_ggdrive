@@ -166,6 +166,40 @@ Route::get('put', function() {
 					         <img src="https://drive.google.com/uc?id=1CMwh-yUrYDGkZ2k_esFQIDVXtOfcMzU9" class="fix-img">
 					    	 </p>
 			        		</li>
+			        		<li>
+			        			<p>List danh sách</p>
+			        			<v-card-text class="pink lighten-2">
+						  		<pre>
+Route::get('list', function() {
+    $dir = '/';
+    $recursive = false; // Có lấy file trong các thư mục con không?
+    $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+    return $contents->where('type', '=', 'file');
+});
+								</pre>
+					        	</v-card-text>
+			        		</li>
+			        		<li>
+			        			<p>xóa file</p>
+			        			<v-card-text class="pink lighten-2">
+						  		<pre>
+Route::get('delete', function() {
+
+    $filename = 'hellosfr.txt';
+    $dir = '/';
+    $recursive = false; 
+    $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+    $file = $contents
+        ->where('type', '=', 'file')
+        ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+        ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+        ->first(); 
+    Storage::cloud()->delete($file['path']);
+    return 'File was deleted from Google Drive';
+});
+								</pre>
+					        	</v-card-text>
+			        		</li>
 			        	</ul>
 			        </div>
 				</div>

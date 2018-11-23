@@ -74567,7 +74567,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74578,6 +74578,40 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -75074,6 +75108,38 @@ var render = function() {
                                 "https://drive.google.com/uc?id=1CMwh-yUrYDGkZ2k_esFQIDVXtOfcMzU9"
                             }
                           })
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      [
+                        _c("p", [_vm._v("List danh sách")]),
+                        _vm._v(" "),
+                        _c("v-card-text", { staticClass: "pink lighten-2" }, [
+                          _c("pre", [
+                            _vm._v(
+                              "Route::get('list', function() {\n    $dir = '/';\n    $recursive = false; // Có lấy file trong các thư mục con không?\n    $contents = collect(Storage::cloud()->listContents($dir, $recursive));\n    return $contents->where('type', '=', 'file');\n});\n\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      [
+                        _c("p", [_vm._v("xóa file")]),
+                        _vm._v(" "),
+                        _c("v-card-text", { staticClass: "pink lighten-2" }, [
+                          _c("pre", [
+                            _vm._v(
+                              "Route::get('delete', function() {\n\n    $filename = 'hellosfr.txt';\n    $dir = '/';\n    $recursive = false; \n    $contents = collect(Storage::cloud()->listContents($dir, $recursive));\n    $file = $contents\n        ->where('type', '=', 'file')\n        ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))\n        ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))\n        ->first(); \n    Storage::cloud()->delete($file['path']);\n    return 'File was deleted from Google Drive';\n});\n\t\t\t\t\t\t\t\t"
+                            )
+                          ])
                         ])
                       ],
                       1
